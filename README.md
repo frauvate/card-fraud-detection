@@ -31,10 +31,45 @@ The project demonstrates how to handle **imbalanced datasets**, tune thresholds 
 - **Recall (Fraud detection):** 100%  
 - **Precision:** ~0.89  
 - **Confusion Matrix:**
-'''
+```
 [[TN, FP],
 [FN, TP]]
 
 [[4394, 2],
 [ 0, 17]]
-'''
+```
+---
+
+## 🔍 SHAP Explainability
+SHAP (SHapley Additive exPlanations) helps us understand **which features drive fraud predictions**.
+
+![SHAP Summary Plot](images/shap_summary.png)
+
+*Interpretation: Features on the top are most influential. Red indicates higher feature values, blue indicates lower values.*
+
+---
+
+## 🏗️ Project Structure
+```
+├── card_fraud_detection.ipynb # Google Colab notebook with full pipeline
+├── images/
+│ └── shap_summary.png # Example SHAP visualization
+├── README.md # Project documentation
+```
+---
+
+## 📌 Next Steps
+- Add time-based validation for realistic fraud detection.
+- Experiment with ensemble models (XGBoost + LightGBM + Random Forest).
+- Deploy model as an API or batch inference service.
+- Monitor drift and retrain with new data.
+
+---
+
+## 🙌 Acknowledgements
+- Dataset: [Kaggle - Credit Card Fraud Detection (2023)](https://www.kaggle.com/)
+- Libraries: `XGBoost`, `scikit-learn`, `SHAP`, `matplotlib`, `pandas`
+
+---
+
+Made with ❤️ by Esma
