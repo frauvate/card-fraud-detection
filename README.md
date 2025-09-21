@@ -53,7 +53,7 @@ SHAP (SHapley Additive exPlanations) helps us understand **which features drive 
 ```
 ├── card_fraud_detection.ipynb # Google Colab notebook with full pipeline
 ├── images/
-│ └── shap_summary.png # Example SHAP visualization
+│ └── shap_summary.png # SHAP visualization
 ├── README.md # Project documentation
 ```
 ---
